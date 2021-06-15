@@ -11,3 +11,4 @@ To host you can use [Guthub Pages](https://pages.github.com). See my example [he
 - Add your photo on line `77` (you can just put this in the folder link locally `src="me.png"`)
 - Change your email on line `105`
 - Change your social links on lines `84`, `86`, `88` and `90` then drop in your interesting links from line `96`
+- Setup the hit counter by changing the url in line `109` to your own (see [here](https://github.com/brentvollebregt/hit-counter))
