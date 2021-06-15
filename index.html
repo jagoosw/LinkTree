@@ -2,16 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <link rel="shortcut icon" href="https://res.cloudinary.com/phonerefer/image/upload/v1575096088/ve0o2n85nfvgdatgqer2.jpg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="manifest" href="icons/site.webmanifest">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#343a40" />
+  <meta name="theme-color" content="#2e3440" />
   <meta
-          name="description"
-          content="Links To My Accounts | Developed By - Your Name"
+          name="Jago Strong-Wright"
+          content="Hello! I am Jago, an Astrophysics student at the University of Cambridge. This is my homepage"
   />  
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-     <title>Links - Your Name</title>
+     <title>Jago Strong-Wright</title>
      <style>
        body{
          background-color: #2e3440;
@@ -20,6 +23,10 @@
        h5{
              color: #eceff4;
        }
+       hr{
+         color:#d8dee9;
+         border-color:#d8dee9;
+       }
        .name{
            color: #8fbcbb
 ;
@@ -27,11 +34,14 @@
        .love{
            color: #bf616a !important;
        }
+       .mute{
+           color: rgb(171, 185, 207);
+       }
        /*----------------- Mail-------------------- */
        #email{
            text-decoration: none;
            float: right;
-           color:#a3be8c;
+           color:#8fbcbb;
        }
        .footer{
            margin-top: 5% !important;
@@ -44,6 +54,7 @@
          background-color: #3b4252;
        }
        .btn-outline-light:hover{
+         color:#e5e9f0;
          border-color: #d8dee9;
          background-color: #4c566a;
        }
@@ -52,36 +63,48 @@
             margin-top: 35% !important;
             }
        }
+       .m-3{
+         border-radius: 5%;
+       }
      </style>
 </head>
 <body>
 <div class="container">
   <div class="media mt-5">
-    <img src="https://res.cloudinary.com/phonerefer/image/upload/v1575096088/ve0o2n85nfvgdatgqer2.jpg" class="m-3" alt="image" width="75px" height="75px">
+    <img src="https://avatars.githubusercontent.com/u/26657828" class="m-3" alt="image" width="75px" height="75px">
     <div class="media-body m-2">
-      <h5 class="align-items-center mt-2">Your name</h5>
-      <p>Hello! I am (Your Name) Developer based in (Your City), (Your Country).</p>
+      <h5 class="align-items-center mt-2">Jago Strong-Wright</h5>
+      <p>Hello! I am Jago, an Astrophysics student at the University of Cambridge.
+      </p>
     </div>
   </div>
 <div class="mt-4">
-  <a href="#" class="btn btn-outline-light btn-block" role="button" target="_blank"><i class="fab fa-github">&nbsp;</i>Github</a>
+  <a href="https://github.com/jagoosw" class="btn btn-outline-light btn-block" role="button"><i class="fab fa-github">&nbsp;</i>Github</a>
   <br>
-  <a href="#" class="btn btn-outline-light btn-block" role="button" target="_blank"><i class="fab fa-codepen">&nbsp;</i>Codepen</a>
+  <a href="https://twitter.com/jagosw" class="btn btn-outline-light btn-block" role="button"><i class="fab fa-twitter">&nbsp;</i>Twitter</a>
   <br>
-  <a href="#" class="btn btn-outline-light btn-block" role="button" target="_blank"><i class="fab fa-instagram">&nbsp;</i>Instagram</a>
+  <a href="https://www.instagram.com/jago.sw/" class="btn btn-outline-light btn-block" role="button"><i class="fab fa-instagram">&nbsp;</i>Instagram</a>
   <br>
-  <a href="#" class="btn btn-outline-light btn-block" role="button" target="_blank"><i class="fab fa-twitter">&nbsp;</i>Twitter</a>
+  <a href="https://jagosw.com" class="btn btn-outline-light btn-block" role="button"><i class="fa fa-code">&nbsp;</i>Website/blog <span class="mute">(kind of out of date)</span></span></a>
+</div>
+<br>
+<hr/>
+<br>
+<div class="mt-4">
+  <a href="#" class="btn btn-outline-light btn-block" role="button" title="Coming soon"><i class="fa fa-laptop">&nbsp;</i>Summer Research <span class="mute">- using computatioanl modeling to determine the potential for carbon sequestration of Kelp bouys in the North Atlantic</span></a>
   <br>
-  <a href="#" class="btn btn-outline-light btn-block" role="button" target="_blank"><i class="fa fa-code">&nbsp;</i>Company Site</a>
+  <a href="https://github.com/CUspaceflight/Campyros" class="btn btn-outline-light btn-block" role="button" ><i class="fa fa-rocket">&nbsp;</i>CamPyRoS <span class="mute">- Python package which providing rocket trajectory simulation</span></a>
+  <br>
+  <a href="https://github.com/jagoosw/getgfs" class="btn btn-outline-light btn-block" role="button"><i class="fa fa-cloud">&nbsp;</i>getgfs <span class="mute">- Python library that fetches forecast variables from the NOAA GFS forceast without horrible dependencies</span></a>
+  <br>
+  <a href="https://justgiving.com/crowdfunding/john-strong" class="btn btn-outline-light btn-block" role="button"><i class="fa fa-heartbeat">&nbsp;</i>Justgiving raising money for community defibrillators in memory of my Uncle, John Strong</a>
 </div>
         <!--------------------Footer---------------------------->
   <div class="footer mt-5">
-    <hr/>
-    <h6>Made With <span class="love">♥</span> in (Your City), (Your Country)</h6>
     <h6>
       Theme based on 
-      <a href="/" class="name" target="https://nordtheme.com"> Nord </a>
-      <a id="email" href="mailto:me@mail"> <i class="fa fa-envelope"> </i> </a>
+      <a href="https://www.nordtheme.com" class="name"> Nord </a>. Copy this <a href="https://github.com/jagoosw/LinkTree" class="name">template</a>.
+      <a id="email" href="mailto:jagoosw@protonmail.com"> <i class="fa fa-envelope"> </i> </a>
     </h6>
   </div>
 </div>
