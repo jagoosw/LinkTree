@@ -10,7 +10,7 @@
   <meta name="theme-color" content="#2e3440" />
   <meta
           name="Jago Strong-Wright"
-          content="My homepage: links to projects, profiles and contact information."
+          content="PhD student studying the effect of biological systems on the ocean carbon cycle through computational modelling at the University of Cambridge."
   />  
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -32,14 +32,16 @@
          border-color:#d8dee9;
        }
        .name{
-           color: #8fbcbb
-;
+           color: #8fbcbb;
+       }
+       .emph{
+           color: #88c0d0;
        }
        .love{
            color: #bf616a !important;
        }
        .mute{
-           color: rgb(171, 185, 207);
+           color: #e5e9f0;
        }
        /*----------------- Mail-------------------- */
        #email{
@@ -64,57 +66,75 @@
        }
        @media (max-width: 479px) {
             .footer{
-            margin-top: 35% !important;
+            margin-top: 35vh;
+            }
+          .container-fluid{
+              width:80vw;
+              margin-top: 5vh;
+              height: 100%;
+              margin-bottom:5vh;
+          }
+       }
+       @media (min-width: 479px){
+        .container-fluid{
+              width:60vw;
+              margin-top: 20vh;
+              height: 100%;
+              margin-bottom:10vh;
             }
        }
        .m-3{
          border-radius: 5%;
+         width: 100%;
+       }
+       .intro{
+         font-size: large;
+         text-size-adjust: auto;
+       }
+       .header{
+          color: #d8dee9;
+          margin-top: 1vh;
+          margin-bottom:1vh;
        }
      </style>
 </head>
 <body>
-<div class="container">
-  <div class="media mt-5">
-    <img src="https://avatars.githubusercontent.com/u/26657828" class="m-3" alt="image" width="100px" height="100px">
-    <div class="media-body m-2  justify-content-center">
-      <h5 class="align-items-center mt-2">Jago Strong-Wright</h5>
-      <p>Hello! I'm Jago, an astrophysics student at the University of Cambridge with interests in climate change and modelling.
-      </p>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 media">
+        <div class="row">
+          <img class="m-3" alt="A photo of Jago's head and shoulders, smiling while wearing academic dress (white bow tie and bands) at graduation" src="https://avatars.githubusercontent.com/u/26657828" />
+          <h5 class="header">Where to find me</h5>
+          <a href="https://github.com/jagoosw" class="btn btn-outline-light btn-block" role="button"><i class="fab fa-github">&nbsp;</i>Github</a>
+          <a href="https://www.linkedin.com/in/jagosw/" class="btn btn-outline-light btn-block" role="button"><i class="fab fa-linkedin">&nbsp;</i>LinkedIn</a>
+          <a href="https://twitter.com/jagosw" class="btn btn-outline-light btn-block" role="button"><i class="fab fa-twitter">&nbsp;</i>Twitter</a>
+          <a href="https://www.instagram.com/jago.sw/" class="btn btn-outline-light btn-block" role="button"><i class="fab fa-instagram">&nbsp;</i>Instagram</a>
+        </div>
+      </div>
+      <div class="col-md-9 media-body">
+        <h1 class="align-items-center name">
+          Jago Strong-Wright
+        </h1>
+        <p class="intro">
+          Hello! I'm Jago, a PhD student attempting to quantify the fate of carbon in blue carbon systems such as kelp forests to work out how they could be enhanced to sequester more carbon, and to help better understand how these biological systems effect the broader ocean carbon cycle. I work in the <a href="www.damtp.cam.ac.uk/user/jrt51/" class="emph">Ocean Dynamics group</a> in the Department of Applied Mathematics and Theoretical Physics at the University of Cambridge, supervised by Professor John Taylor.
+        </p>
+        <h5 class="header">What I've been up to</h5>
+
+        <p class="btn btn-outline-light btn-block"><i class="fa fa-fire">&nbsp;</i> <a href="Coming Soon" class="emph">OceanBioME.jl</a> - <span class="mute">In order to study ocean carbon systems I am currently developing a flexible and easy to use biogeochemcical modelling environment in <a href="https://julialang.org/" class="emph">Juilia</a> (a fantastic language!), built on top of <a href="https://clima.github.io/OceananigansDocumentation" class="emph">Oceananigans.jl</a>, an established fluids solver. Once complete this will be available as a Julia package to hopefully be useful to others studying the impact and effectiveness of other ocean based carbon dioxide removal strategies</span></p>
+        <p class="btn btn-outline-light btn-block"><i class="fa fa-scroll">&nbsp;</i><a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.793977" class="emph">Modeling the Growth Potential of the Kelp Saccharina Latissima in the North Atlantic</a> -  <span class="mute">Using a mathematical model of S. latissima (implemented in Julia) forced by ocean state estimates we determined which areas of the North Atlantic may be suitable for growing kelp (a proposed carbon sequestration strategy)</span></p>
+        <p class="btn btn-outline-light btn-block" ><i class="fa fa-fire">&nbsp;</i><a href="https://github.com/jagoosw/SugarKelp.jl" class="emph" >SugarKelp.jl </a> -  <span class="mute">Model of sugar kelp implimented in Julia</span></p>
+        <p class="btn btn-outline-light btn-block"><i class="fa fa-cloud">&nbsp;</i><a href="https://github.com/jagoosw/getgfs"  class="emph">getgfs </a> - <span class="mute"> get NOAA GFS forecasts in Python with no platform specific dependencies</span></p>
+        <br>
+      </div>
     </div>
-  </div>
-<div class="mt-4">
-  <h5>Where to find me</h5>
-  <br>
-  <a href="https://github.com/jagoosw" class="btn btn-outline-light btn-block" role="button"><i class="fab fa-github">&nbsp;</i>Github</a>
-  <br>
-  <a href="https://twitter.com/jagosw" class="btn btn-outline-light btn-block" role="button"><i class="fab fa-twitter">&nbsp;</i>Twitter</a>
-  <br>
-  <a href="https://www.instagram.com/jago.sw/" class="btn btn-outline-light btn-block" role="button"><i class="fab fa-instagram">&nbsp;</i>Instagram</a>
-  <br>
-  <!--<a href="https://blog.jagosw.com/" class="btn btn-outline-light btn-block" role="button"><i class="fa fa-code">&nbsp;</i>Website/blog <span class="mute">(kind of out of date)</span></span></a>
-  --></div>
-<br>
-<hr/>
-<div class="mt-4">
-  <h5>Selected Projects</h5>
-  <br>
-  <a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.793977" class="btn btn-outline-light btn-block" role="button" title="Modeling the Growth Potential of the Kelp Saccharina Latissima in the North Atlantic"><i class="fa fa-scroll">&nbsp;</i>Modeling the Growth Potential of the Kelp Saccharina Latissima in the North Atlantic  <span class="mute">- I worked with Dr John Taylor from the Department of Applied Mathematics and Theoretical Physics, at the University of Cambridge, to use a mathematical model of S. latissima (implemented in Julia) forced by ocean state estimates to determine which areas of the North Atlantic may be suitable for growing kelp (a proposed carbon sequestration strategy).</span></a>
-  <br>
-  <a href="https://github.com/jagoosw/SugarKelp.jl" class="btn btn-outline-light btn-block" role="button" title="SugarKelp.jl"><i class="fa fa-fire">&nbsp;</i>SugarKelp.jl : Model of sugar kelp in Julia <span class="mute">- developed as part of my summer research project investigating the growth potential of kelp in the North Atlantic (for the purpose of carbon sequestration)</span></a>
-  <br>
-  <a href="https://github.com/CUspaceflight/Campyros" class="btn btn-outline-light btn-block" role="button" ><i class="fa fa-rocket">&nbsp;</i>CamPyRoS : Unguided rocket trajectory simulation in Python<span class="mute">- part of the work as Cambridge University Space Flight software, simulation, and modelling project manager</span></a>
-  <br>
-  <a href="https://github.com/jagoosw/getgfs" class="btn btn-outline-light btn-block" role="button"><i class="fa fa-cloud">&nbsp;</i>getgfs : get NOAA GFS forecasts in Python<span class="mute">- developed for use in CamPyRoS since alternatives use platform specific dependancies</span></a>
         <!--------------------Footer---------------------------->
   <div class="footer mt-5">
     <h6>
       Theme based on 
       <a href="https://www.nordtheme.com" class="name"> Nord</a>. Using <a href="https://brailleinstitute.org/freefont" class="name"> Atkinson Hyperlegible</a> for easier reading. </a>Copy this <a href="https://github.com/jagoosw/LinkTree" class="name">template</a>.
-      <a id="email" href="mailto:jagoosw@protonmail.com"> <i class="fa fa-envelope"> </i> </a>
+      <a id="email" href="mailto:js2430@cam.ac.uk"> <i class="fa fa-envelope"> </i> : js2430@cam.ac.uk</a>
     </h6>
   </div>
 </div>
-<img src="https://hitcounter.pythonanywhere.com/count/tag.svg?url=jagosw.com" alt="Hits" hidden=True>
 </body>
-  
 </html>
