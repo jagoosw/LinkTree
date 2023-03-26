@@ -64,6 +64,13 @@
          border-width: 5px;
          border-radius: 15px;
        }
+       .active{
+         color:#CFD3CE;
+         border-color: #34626C;
+         background-color: #34626C;
+         border-width: 5px;
+         border-radius: 15px;
+       }
        .btn-outline-light:hover{
          color:#CFD3CE;
          border-color: #34626C;
@@ -83,7 +90,7 @@
        @media (min-width: 479px){
         .container-fluid{
               width:60vw;
-              margin-top: 15vh;
+              margin-top: 10vh;
               height: 100%;
               margin-bottom:15vh;
             }
@@ -116,6 +123,10 @@
        span.line {
           display: inline-block;
         }
+        .content {
+          display: none;
+          overflow: hidden;
+        }
      </style>
 </head>
 <body>
@@ -127,8 +138,9 @@
         <h5 class="header">Links for our poster at Ocean Visions Summit 2023</h5>
 
         <p class="btn btn-outline-light btn-block intro" onclick="window.location.href='https://github.com/OceanBioME/OceanBioME.jl';"><i class="fa fa-scroll">&nbsp;</i><a href="https://github.com/OceanBioME/OceanBioME.jl" class="emph">OceanBioME.jl</a> -  Repository containing the package including documentation, ongoing discussions, issues and pull requests</p>
-        <p class="btn btn-outline-light btn-block intro" onclick="window.location.href='coming-soon';"><i class="fa fa-video">&nbsp;</i><a href="https://github.com/OceanBioME/OceanBioME.jl" class="emph">Example Video</a> -  An animated version of our Eady problem example</p>
+        <p class="btn btn-outline-light btn-block intro" onclick="window.location.href='https://github.com/jagoosw/OVS23';"><i class="fa fa-video">&nbsp;</i><a href="https://github.com/jagoosw/OVS23" class="emph">Animated examples and code</a> - Repository containing animated versions of the examples and the code used to generate them</p>
         <p class="btn btn-outline-light btn-block intro" onclick="window.location.href='https://jagosw.com';"><i class="fa fa-user">&nbsp;</i><a href="https://jagosw.com" class="emph" >About me</a> - A link to my homepage for contact information and other projects</p>
+      
       </div>
     </div>
     <div class="footer mt-5">
@@ -139,4 +151,22 @@
     </div>
 </div>
 </body>
+
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  </script>
 </html>
