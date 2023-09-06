@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
   <link rel="manifest" href="icons/site.webmanifest">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#2e3440" />
+  <meta name="theme-color" content="#C6B497" />
   <meta
           name="Jago Strong-Wright"
           content="PhD student studying the effect of biological systems on the ocean carbon cycle through computational modelling at the University of Cambridge."
@@ -20,49 +20,50 @@
   <title>Jago Strong-Wright</title>
      <style>
        body{
-         background-color: #2e3440;
-         color :#e5e9f0;
+         background-color: #839B97;
+         color :#34626C;
          font-family: 'Atkinson Hyperlegible', sans-serif;
        }
        h5{
-             color: #eceff4;
+             color: #CFD3CE;
        }
        hr{
-         color:#d8dee9;
-         border-color:#d8dee9;
+         color:#CFD3CE;
+         border-color:#CFD3CE;
        }
        .name{
-           color: #8fbcbb;
+           color: #CFD3CE;
+           margin-top:1vh;
        }
        .emph{
-           color: #88c0d0;
+           color: #C6B497;
        }
        .love{
            color: #bf616a !important;
        }
        .mute{
-           color: #e5e9f0;
+           color: #CFD3CE;
        }
        /*----------------- Mail-------------------- */
        #email{
            text-decoration: none;
            float: right;
-           color:#8fbcbb;
+           color:#839B97;
        }
        .footer{
            margin-top: 5% !important;
-           margin-bottom: 10px;
-           color: #d8dee9;
+           color: #CFD3CE;
+
        }
        .btn-outline-light{
-         color:#e5e9f0;
-         border-color: #d8dee9;
-         background-color: #3b4252;
+         color:#CFD3CE;
+         border-color: #34626C;
+         background-color: #34626C;
        }
        .btn-outline-light:hover{
-         color:#e5e9f0;
-         border-color: #d8dee9;
-         background-color: #4c566a;
+         color:#CFD3CE;
+         border-color: #34626C;
+         background-color: #34626C;
        }
        @media (max-width: 479px) {
             .footer{
@@ -99,7 +100,11 @@
          text-size-adjust: auto;
        }
        .header{
-          color: #d8dee9;
+          color: #C6B497;
+       }
+
+       .column-header{
+          color: #34626C;
           margin-top: 1vh;
           margin-bottom:1vh;
        }
@@ -110,29 +115,56 @@
           display: none;
           overflow: hidden;
         }
+
+        .all-body{
+          color:#CFD3CE;
+          border-color: #34626C;
+          background-color: #34626C;
+          border-radius: 2%;
+          margin-right: 1vw;
+        }
+        
+        hr {
+          background-color: #C6B497;
+          border-color: #C6B497;
+          display: block;
+          margin-top: 0.5em;
+          margin-bottom: 0.5em;
+          margin-left: auto;
+          margin-right: auto;
+          border-style: none;
+          border-width: 1px;
+        }
+        .spaces-list{
+          margin-bottom: 1vh
+        }
      </style>
 </head>
 <body>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-9 media-body">
+      <div class="col-md-9 media-body all-body">
         <h1 class="align-items-center name">
           Jago <span class="line">Strong-Wright</span> 
         </h1>
+        <hr style="height:0.5vh;">
         <p class="intro">
           Hello! I'm Jago, a PhD student attempting to quantify the fate of carbon in blue carbon systems such as kelp forests to work out how they could be enhanced to sequester more carbon, and to help better understand how these biological systems effect the broader ocean carbon cycle. I work in the <a href="https://www.damtp.cam.ac.uk/user/jrt51/" class="emph">Ocean Dynamics group</a> in the Department of Applied Mathematics and Theoretical Physics at the University of Cambridge, supervised by Professor John Taylor.
         </p>
         <h5 class="header">What I've been up to</h5>
-
-        <p class="btn btn-outline-light btn-block" onclick="window.location.href='https://github.com/OceanBioME/OceanBioME.jl';"><i class="fa fa-fire">&nbsp;</i> <a href="https://github.com/OceanBioME/OceanBioME.jl" class="emph">OceanBioME.jl</a> - <span class="mute">In order to study ocean carbon systems I am currently developing a Julia package for the easy and flexible modelling of ocean biogeochemical systems. Built on top of <a href="https://clima.github.io/OceananigansDocumentation" class="emph">Oceananigans.jl</a> it provides the tools for studying the coupled interactions of ocean biology, carbonate chemistry, and physics.</span></p>
-        <p class="btn btn-outline-light btn-block" onclick="window.location.href='https://www.frontiersin.org/articles/10.3389/fmars.2021.793977';"><i class="fa fa-scroll">&nbsp;</i><a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.793977" class="emph">Modeling the Growth Potential of the Kelp Saccharina Latissima in the North Atlantic</a> -  <span class="mute">Using a mathematical model of S. latissima (implemented in Julia) forced by ocean state estimates we determined which areas of the North Atlantic may be suitable for growing kelp (a proposed carbon sequestration strategy)</span></p>
-        <p class="btn btn-outline-light btn-block" onclick="window.location.href='https://github.com/jagoosw/SugarKelp.jl';"><i class="fa fa-fire">&nbsp;</i><a href="https://github.com/jagoosw/SugarKelp.jl" class="emph" >SugarKelp.jl </a> -  <span class="mute">Model of sugar kelp implimented in Julia</span></p>
-        <p class="btn btn-outline-light btn-block" onclick="window.location.href='https://github.com/jagoosw/getgfs';"><i class="fa fa-cloud">&nbsp;</i><a href="https://github.com/jagoosw/getgfs"  class="emph">getgfs </a> - <span class="mute"> get NOAA GFS forecasts in Python with no platform specific dependencies</span></p>
+        <p>
+          <ul>
+            <li class="spaces-list"><i class="fa fa-fire">&nbsp;</i><a href="https://github.com/OceanBioME/OceanBioME.jl" class="emph">OceanBioME.jl</a> - In order to study ocean carbon systems I am currently developing a Julia package for the easy and flexible modelling of ocean biogeochemical systems. Built on top of <a href="https://clima.github.io/OceananigansDocumentation" class="emph">Oceananigans.jl</a> it provides the tools for studying the coupled interactions of ocean biology, carbonate chemistry, and physics.</li>
+            <li class="spaces-list"><i class="fa fa-scroll">&nbsp;</i><a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.793977" class="emph">Modeling the Growth Potential of the Kelp Saccharina Latissima in the North Atlantic</a> - Using a mathematical model of S. latissima (implemented in Julia) forced by ocean state estimates we determined which areas of the North Atlantic may be suitable for growing kelp (a proposed carbon sequestration strategy)</li>
+            <li class="spaces-list"><i class="fa fa-fire">&nbsp;</i><a href="https://github.com/jagoosw/SugarKelp.jl" class="emph" >SugarKelp.jl </a> - Model of sugar kelp implimented in Julia</li>
+            <li class="spaces-list"><i class="fa fa-cloud">&nbsp;</i><a href="https://github.com/jagoosw/getgfs"  class="emph">getgfs </a> - get NOAA GFS forecasts in Python with no platform specific dependencies</li>
+          </ul>
+        </p>
       </div>
       <div class="col-md-3 media">
         <div class="row"><img class="m-3" alt="A photo of Jago's head and shoulders, smiling and looking at the camera wearing  alight blue sports swearshirt" src="https://avatars.githubusercontent.com/u/26657828" />
           <div class="contacts">
-            <h5 class="header">Where to find me</h5>
+            <h5 class="column-header">Where to find me</h5>
             <a href="https://github.com/jagoosw" class="btn btn-outline-light btn-block" role="button"><i class="fab fa-github">&nbsp;</i>Github</a>
             <a href="https://bibbase.org/service/mendeley/7a864f5c-8110-31b3-a3e5-ed0911140805" class="btn btn-outline-light btn-block" role="button"><i class="fas fa-paperclip">&nbsp;</i>Publications</a>
             <a href="https://www.linkedin.com/in/jagosw/" class="btn btn-outline-light btn-block" role="button"><i class="fab fa-linkedin">&nbsp;</i>LinkedIn</a>
@@ -146,7 +178,7 @@
   <div class="footer mt-5">
     <h6>
       Theme based on 
-      <a href="https://www.nordtheme.com" class="name"> Nord</a>. Using <a href="https://brailleinstitute.org/freefont" class="name"> Atkinson Hyperlegible</a> for easier reading. </a>Copy this <a href="https://github.com/jagoosw/LinkTree" class="name">template</a>.
+      <a href="https://colorhunt.co/palette/34626c839b97cfd3cec6b497" class="emph"> this</a> palette, using <a href="https://brailleinstitute.org/freefont" class="emph"> Atkinson Hyperlegible</a> for easier reading. </a>Copy this <a href="https://github.com/jagoosw/LinkTree" class="emph">template</a>.
       <a id="email" href="mailto:js2430@cam.ac.uk"> <i class="fa fa-envelope"> </i> : js2430@cam.ac.uk</a>
     </h6>
   </div>
